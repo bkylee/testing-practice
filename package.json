@@ -1,0 +1,20 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "Write tests for the following, and then make the tests pass!",
+  "main": "test-pract.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkylee/testing-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkylee/testing-practice/issues"
+  },
+  "homepage": "https://github.com/bkylee/testing-practice#readme"
+}
