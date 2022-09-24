@@ -2,11 +2,14 @@ import {
     capitalize,
     reverseString,
     calculator,
-    caesarCipher
+    caesarCipher, 
+    analyzeArray
 } from './test-pract.js';
 const str = 'abcce';
 const x = 10;
 const y = 2;
+
+const arr = [1,2,3,4,0];
 
 test ('capitalize first letter', () =>{
     expect(capitalize(str)).toMatch(str.charAt(0).toUpperCase() + str.slice(1));
@@ -37,13 +40,15 @@ test ('casear cypher alphabet',()=>{
   expect(caesarCipher(str)).toMatch('bcddf');  
 });
 
-// test ('caesar cypher punctuation',()=>{
-//     for(let i = 0; i < str.length; i ++){
-//         expect(caesarCipher(str).charCodeAt(i)).toMatch((str.charCodeAt(i))+1)};
-//     if (str.charCodeAt(i) == 122){
-//             expect(caesarCipher(str).charCodeAt(i)).toMatch(97)
-//     }
-//     if (str.charCodeAt(i) == 90){
-//         expect(caesarCipher(str).charCodeAt(i)).toMatch(65);
-//     };
-// });
+
+test ('array length', ()=>{
+    const value = {
+        avg: 2,
+        min: 0,
+        max: 4,
+        length: 5
+    }
+    expect(analyzeArray(arr)).toEqual(value);
+});
+
+
