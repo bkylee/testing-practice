@@ -16,24 +16,21 @@ test ('capitalize first letter', () =>{
 });
 
 test ('string is reversed', ()=>{
-    let newStr = "";
-    for(let i = str.length; i >= 0; i--){
-        newStr = newStr.concat(str.charAt(i));
-    };
+    let newStr = 'eccba';
     expect(reverseString(str)).toMatch(newStr);
 });
 
 test ('calc addition',()=>{
-    expect(calculator.add(x,y)).toBe(x + y);
+    expect(calculator.add(x,y)).toBe(12);
 });
 test ('calc subtraction',()=>{
-    expect(calculator.subtract(x,y)).toBe(x - y);
+    expect(calculator.subtract(x,y)).toBe(8);
 });
 test ('calc multiplication',()=>{
-    expect(calculator.multiply(x,y)).toBe(x * y);
+    expect(calculator.multiply(x,y)).toBe(20);
 });
 test ('calc division',()=>{
-    expect(calculator.divide(x,y)).toBe(x / y);
+    expect(calculator.divide(x,y)).toBe(5);
 });
 
 test ('casear cypher alphabet',()=>{
